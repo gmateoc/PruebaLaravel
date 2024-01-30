@@ -17,4 +17,8 @@ class TaskUser extends Pivot
         'state_id'
     ];
 
+    public function state(){
+        return $this->belongsTo(State::class);
+    }
+
 }
